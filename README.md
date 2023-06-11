@@ -14,6 +14,7 @@ Add user secrets to the console project with the neccessary values,
 ```
 {
   "AzureOpenAISettings": {
+    "ServiceKey": "<Key>",
     "ServiceName": "<Service-Name>",
     "DeploymentName": "<Model-Deployment-Name>",
     "Endpoint": "https://<Service-Name>.openai.azure.com",
@@ -21,6 +22,7 @@ Add user secrets to the console project with the neccessary values,
     "MaxModelTokens": 8192
   },
   "AzureCognitiveSearchSettings": {
+    "ServiceKey": "<Key>",
     "ServiceName": "<Service-Name>",
     "Index": "<Index-Name>",
     "SemanticConfig": "<Semantic-Config-Name>",
