@@ -10,7 +10,7 @@ You should have the following resources set up on Azure,
 - **Azure OpenAI**: Add a model deployment to your Azure OpenAI service, either GPT 3.5 Turbo or GPT 4.
 
 ## User Secrets
-Add user secrets to the console project with the neccessary values,
+Add user secrets to the console project as follows, with the neccessary values specified.
 ```
 {
   "AzureOpenAISettings": {
