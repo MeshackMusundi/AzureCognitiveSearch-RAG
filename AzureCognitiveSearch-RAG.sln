@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACS.RAG.Services", "ACS-RAG.Services\ACS.RAG.Services.csproj", "{117BF467-64A1-445B-BED5-9B0D2713002A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACS.RAG.Console", "ACS.RAG.Console\ACS.RAG.Console.csproj", "{C1BBDAA2-43DF-4388-B5E2-706854EC0372}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{117BF467-64A1-445B-BED5-9B0D2713002A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117BF467-64A1-445B-BED5-9B0D2713002A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117BF467-64A1-445B-BED5-9B0D2713002A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117BF467-64A1-445B-BED5-9B0D2713002A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C1BBDAA2-43DF-4388-B5E2-706854EC0372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1BBDAA2-43DF-4388-B5E2-706854EC0372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1BBDAA2-43DF-4388-B5E2-706854EC0372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1BBDAA2-43DF-4388-B5E2-706854EC0372}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EFABD2D-420E-4775-8164-944A15973561}
+	EndGlobalSection
+EndGlobal
