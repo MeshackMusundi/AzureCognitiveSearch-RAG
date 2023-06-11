@@ -9,7 +9,7 @@ You should have the following resources set up on Azure,
 - **Azure Cognitive Search Service**: The service should be set up in a standard tier which will ensure you can use Semantic Search. Add the storage container as a data source for the search service and set up the indexer, index, and Semantic Search configuration. The results from the search service are used to provide context to the prompt sent to the Azure OpenAI model.
 - **Azure OpenAI**: Add a model deployment to your Azure OpenAI service, either GPT 3.5 Turbo or GPT 4.
 
-# Secrets
+## User Secrets
 Add user secrets to the console project with the neccessary values,
 ```
 {
