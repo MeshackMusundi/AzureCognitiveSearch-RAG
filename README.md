@@ -19,7 +19,8 @@ Add user secrets to the console project with the neccessary values,
     "DeploymentName": "<Model-Deployment-Name>",
     "Endpoint": "https://<Service-Name>.openai.azure.com",
     "MaxCompletionTokens": 500,
-    "MaxModelTokens": 8192
+    "MaxModelTokens": 8192,
+    "Instructions": "Assistant is an intelligent chatbot..."
   },
   "AzureCognitiveSearchSettings": {
     "ServiceKey": "<Key>",
