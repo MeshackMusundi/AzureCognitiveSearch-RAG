@@ -1,5 +1,5 @@
 # Introduction
-This is a simple C# demo that highlighting how to have conversational interactions with private data in Azure using Azure Cognitive Search and Azure OpenAI.
+This is a simple C# demo highlighting how to have conversational interactions with private data in Azure using Azure Cognitive Search and Azure OpenAI.
 
 Azure Cognitive Search is used for Retrieval Augmented Generation.
 
