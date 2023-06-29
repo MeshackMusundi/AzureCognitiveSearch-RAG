@@ -4,6 +4,7 @@ using ACS.RAG.Services.Utilities;
 using Microsoft.SemanticKernel.AI.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.AI.OpenAI.ChatCompletion;
 using Microsoft.SemanticKernel;
+using System.Text;
 
 namespace ACS.RAG.Services.Implementations;
 
@@ -43,6 +44,30 @@ public class ChatGPTService : IChatGPTService
         tokensCount += completion.TokensCount();
 
         return completion;
+    }
+
+    public async IAsyncEnumerable<string> GetAnswerStreamAsync(string question, string context)
+    {
+        if (chatHistory is null) SetUpChat();
+
+        TokensLimitCheck(question, context);
+
+        if (!string.IsNullOrEmpty(context))
+            chatHistory!.AddSystemMessage(context);
+
+        chatHistory!.AddUserMessage(question);
+
+        var completion = new StringBuilder();
+        var completionStream = chatGPT!.GenerateMessageStreamAsync(chatHistory, chatRequestSettings);
+
+        await foreach (var message in completionStream)
+        {
+            completion.Append(message);
+            yield return message;
+        }
+
+        chatHistory!.AddAssistantMessage(completion.ToString());
+        tokensCount += completion.ToString().TokensCount();
     }
 
     private void SetUpChat()
